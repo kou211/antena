@@ -1,0 +1,46 @@
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">新規タグ登録
+                    <!-- <small>Secondary Text</small> -->
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-md-13">
+            <%= form_for(@tag) do |t| %>
+                <h3>登録したいタグ名を入力してください。</h3>
+                <div class="tags">タグ名：<%= t.text_field :name %></div>
+                <%= button_tag type: "submit", class: "btn btn-primary newtag" do %>登録<span class="glyphicon"></span>
+                <% end %>
+            <% end %>
+            </div>
+        </div>
+
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
