@@ -19,104 +19,26 @@
     <!-- /.row -->
 
     <!-- Project One -->
-    <div class="row">
-        <div class="col-md-7">
-        <!-- 登録サイトサムネ -->
-            <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-            </a>
+    <% @index_topic.each do |topic| %>
+        <div class="row">
+            <div class="col-md-7">
+            <!-- 登録サイトサムネ -->
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x300" alt="">
+                </a>
 
+            </div>
+            <div class="col-md-5">
+                <h3><%= topic.title %></h3>
+                <h4>登録タグ：<%= topic.tag_id %></h4>
+                <p>最新記事一覧</p>
+                <a class="btn btn-primary" href="<%= topic.url %>">サイトページへ <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
         </div>
-        <div class="col-md-5">
-            <h3>登録サイト名</h3>
-            <h4>登録タグ：------</h4>
-            <p>最新記事一覧ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-            <a class="btn btn-primary" href="#">サイトページへ <span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div>
-    </div>
+    <% end -%>
     <!-- /.row -->
 
-    <hr>
 
-    <!-- Project One -->
-    <div class="row">
-        <div class="col-md-7">
-        <!-- 登録サイトサムネ -->
-            <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-            </a>
-
-        </div>
-        <div class="col-md-5">
-            <h3>登録サイト名</h3>
-            <h4>登録タグ：------</h4>
-            <p>最新記事一覧</p>
-            <a class="btn btn-primary" href="#">サイトページへ <span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Project One -->
-    <div class="row">
-        <div class="col-md-7">
-        <!-- 登録サイトサムネ -->
-            <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-            </a>
-
-        </div>
-        <div class="col-md-5">
-            <h3>登録サイト名</h3>
-            <h4>登録タグ：------</h4>
-            <p>最新記事一覧</p>
-            <a class="btn btn-primary" href="#">サイトページへ <span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Project One -->
-    <div class="row">
-        <div class="col-md-7">
-        <!-- 登録サイトサムネ -->
-            <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-            </a>
-
-        </div>
-        <div class="col-md-5">
-            <h3>登録サイト名</h3>
-            <h4>登録タグ：------</h4>
-            <p>最新記事一覧</p>
-            <a class="btn btn-primary" href="#">サイトページへ <span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Project One -->
-    <div class="row">
-        <div class="col-md-7">
-        <!-- 登録サイトサムネ -->
-            <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x300" alt="">
-            </a>
-
-        </div>
-        <div class="col-md-5">
-            <h3>登録サイト名</h3>
-            <h4>登録タグ：------</h4>
-            <p>最新記事一覧</p>
-            <a class="btn btn-primary" href="#">サイトページへ <span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <hr>
 
     <!-- Pagination -->
     <div class="row text-center">

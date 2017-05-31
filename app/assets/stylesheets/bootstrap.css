@@ -6785,7 +6785,7 @@ button {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
-  width: 85px;
+  width: 90px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -6818,12 +6818,24 @@ button:active {
 .form-topicnew{
   width: 60%;
   margin-top: 10px;
+  border: medium #c0c0c0 solid;
 }
 
 .tags {
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 17px;
+}
+
+.tags_text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  border: medium #c0c0c0 solid;
+}
+
+.tag-select{
+  border: medium #c0c0c0 double;
 }
 
 .tags .www{
@@ -6838,6 +6850,11 @@ button:active {
 
 .loginbutton {
   float: right;
+}
+
+.userbutton{
+  float: right;
+  margin-right: 10px;
 }
 
 .new_topic{

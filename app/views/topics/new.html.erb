@@ -12,19 +12,21 @@
         </div>
         <!-- /.row -->
         <div class="row">
-            <div class="col-md-13">
+            <%= form_for(@topic, html: {class: :"col-md-13"}) do |t| %>
                 <h3>登録したいサイトのRSSフィードURLを入力してください。</h3>
                 <div class="topic-form">サイト名
-                  <div><input class="form-topicnew", type="text"></div>
+                  <div><%= t.text_field :title, class: :"form-topicnew" %></div>
                 </div>
                 <div class="topic-form">RSSフィードURL
-                    <div><input class="form-topicnew", type="text"></div>
+                  <div><%= t.text_field :url, class: :"form-topicnew" %></div>
                 </div>
                     <div class="tags">
-                        <a class="btn btn-primary" href="#">タグ登録<span class="glyphicon"></span></a>
-                        <div class="www">タグ:<select></select></div>
+                        <%= link_to "タグ登録", "/tags/new", method: :get, class: :"btn btn-primary" %><span class="glyphicon"></span>
+                        <div class="www">タグ:　<%= t.collection_select :tag_id, Tag.all, :id, :name, class: :"tag-select" %></div>
                     </div>
-                <a class="btn btn-primary" href="#">登録<span class="glyphicon"></span></a>
+               <%= button_tag type: "submit", class: "btn btn-primary newtag" do %>登録<span class="glyphicon"></span></a>
+               <% end -%>
+            <% end -%>
             </div>
         </div>
 

@@ -35,12 +35,13 @@
             </ul>
             <% if user_signed_in? %>
             <div class=loginbutton>
-                <button><%= link_to "ユーザーページ", "/users/show", method: :get
+                <button ><%= link_to "Log out", destroy_user_session_path, method: :delete %></button>
+            </div>
+            <div class=userbutton>
+                <button><%= link_to "User page", "/users/show", method: :get
                  %></button>
             </div>
-            <div class=loginbutton>
-                <button><%= link_to "Log out", destroy_user_session_path, method: :delete %></button>
-            </div>
+
             <% else %>
             <div class=loginbutton>
                 <button><%= link_to "Log in", new_user_session_path %></button>
